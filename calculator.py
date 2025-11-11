@@ -23,7 +23,7 @@ def log(a, base):
         raise ValueError("Logarithm argument must be > 0")
     if base <= 0 or base == 1:
         raise ValueError("Invalid logarithm base")
-    return math.log(a, base)
+    return math.log(a) / math.log(base)
 
 def exp(a, b):
     return a ** b
